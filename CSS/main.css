@@ -1,0 +1,46 @@
+.botao{
+    width:80px;
+    height:40px;
+    background-color: silver ;
+}
+
+.botao2{
+    width:165px;
+    height:40px;
+    background-color:silver;
+}
+.visor{
+    width: 330px;
+    height: 40px;
+    
+    font-size:1em;
+    color: black;
+    border: 1px solid rgb(37, 37, 37);
+    }
+
+#calculadora{
+   
+    width: 400px;
+    
+    border: 2px solid rgb(37, 37, 37);
+    
+}
+
+#visorcss{
+    
+    padding-left: 30px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+}
+
+#painel{
+    
+   
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+
+#titulo{
+    padding-left: 80px;
+    padding-bottom: 10px;
+}

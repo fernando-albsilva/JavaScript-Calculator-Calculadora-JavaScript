@@ -1,48 +1,57 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Calculadora JavaScript</title>
-        <meta charset="UTF-8">
-        <script src="../JS/main.js"></script>
-        <style src="../CSS/main.css"></style>
-    </head>
-    <body>
-        
-        <h1> Calculadora JavaScript </h1> <br>
+
+<head>
+    <title>Calculadora JavaScript</title>
+    <meta charset="UTF-8">
+    <script src="../JS/main.js"></script>
+    <link href="../CSS/main.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+    <div id="calculadora">
+        <div id="titulo">
+        <h1 class="titulo"> Calculadora</h1> <br>
+        </div>
         <!-- Cria um input do tipo texto para servir de visor da calculadora-->
-        <input type="text" id="visor" size="30" class="visor" /> <br><br>
-        
+        <div id="visorcss">
+            <input type="text" id="visor" size="30" class="visor" /> <br><br>
+        </div>
         <!-- Cria input do tipo submit para servir como cada botão da calculadora-->
         <!-- Chama a função preencher(); passando o valor do botão como parametro-->
-        <input type="submit" class="botao" value="7" onclick="preencher(7)" />
-        <input type="submit" class="botao" value="8" onclick="preencher(8)" />
-        <input type="submit" class="botao" value="9" onclick="preencher(9)" />
-        <input type="submit" class="botao" value="*" onclick="preencher('*')" />
+        <div id="painel">
+            <input type="submit" class="botao" value="7" onclick="preencher(7)" />
+            <input type="submit" class="botao" value="8" onclick="preencher(8)" />
+            <input type="submit" class="botao" value="9" onclick="preencher(9)" />
+            <input type="submit" class="botao" value="*" onclick="preencher('*')" />
 
-        <br><br>
+            <br><br>
 
-        <input type="submit" class="botao" value="4" onclick="preencher(4)" />
-        <input type="submit" class="botao" value="5" onclick="preencher(5)" />
-        <input type="submit" class="botao" value="6" onclick="preencher(6)" />
-        <input type="submit" class="botao" value="-" onclick="preencher('-')" />
+            <input type="submit" class="botao" value="4" onclick="preencher(4)" />
+            <input type="submit" class="botao" value="5" onclick="preencher(5)" />
+            <input type="submit" class="botao" value="6" onclick="preencher(6)" />
+            <input type="submit" class="botao" value="-" onclick="preencher('-')" />
 
-        <br><br>
+            <br><br>
 
-        <input type="submit" class="botao" value="1" onclick="preencher(1);" />
-        <input type="submit" class="botao" value="2" onclick="preencher(2);" />
-        <input type="submit" class="botao" value="3" onclick="preencher(3);" />
-        <input type="submit" class="botao" value="+" onclick="preencher('+')" />
+            <input type="submit" class="botao" value="1" onclick="preencher(1);" />
+            <input type="submit" class="botao" value="2" onclick="preencher(2);" />
+            <input type="submit" class="botao" value="3" onclick="preencher(3);" />
+            <input type="submit" class="botao" value="+" onclick="preencher('+')" />
 
-        <br><br>
+            <br><br>
 
-        <input type="submit" class="botao" value="." onclick="preencher('.');" />
-        <input type="submit" class="botao" value="0" onclick="preencher(0);" />
-        <!--Chama a função calcular para gerar o resultado da expressão que se encontra no visor-->
-        <input type="submit" class="botao" value="=" onclick="calcular();" /> 
-        <input type="submit" class="botao" value="/" onclick="preencher('/')" />
+            <input type="submit" class="botao" value="." onclick="preencher('.');" />
+            <input type="submit" class="botao" value="0" onclick="preencher(0);" />
+            <!--Chama a função calcular para gerar o resultado da expressão que se encontra no visor-->
+            <input type="submit" class="botao" value="=" onclick="calcular();" />
+            <input type="submit" class="botao" value="/" onclick="preencher('/')" />
 
-        <br><br>
-        <!--chama a função limpar() para limpar a tela do visor-->
-        <input type="submit" class="botao" value="Limpar / Clear" onclick="limpar();" />
-    </body>
+            <br><br>
+            <!--chama a função limpar() para limpar a tela do visor-->
+            <input type="submit" class="botao2" value="Limpar / Clear" onclick="limpar();" />
+        </div>
+    </div>
+</body>
+
 </html>
