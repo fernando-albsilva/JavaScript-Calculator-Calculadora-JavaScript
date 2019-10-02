@@ -9,8 +9,11 @@
     <body>
         
         <h1> Calculadora JavaScript </h1> <br>
+        <!-- Cria um input do tipo texto para servir de visor da calculadora-->
         <input type="text" id="visor" size="30" class="visor" /> <br><br>
         
+        <!-- Cria input do tipo submit para servir como cada botão da calculadora-->
+        <!-- Chama a função preencher(); passando o valor do botão como parametro-->
         <input type="submit" class="botao" value="7" onclick="preencher(7)" />
         <input type="submit" class="botao" value="8" onclick="preencher(8)" />
         <input type="submit" class="botao" value="9" onclick="preencher(9)" />
@@ -34,11 +37,12 @@
 
         <input type="submit" class="botao" value="." onclick="preencher('.');" />
         <input type="submit" class="botao" value="0" onclick="preencher(0);" />
-        <input type="submit" class="botao" value="=" onclick="calcular();" />
+        <!--Chama a função calcular para gerar o resultado da expressão que se encontra no visor-->
+        <input type="submit" class="botao" value="=" onclick="calcular();" /> 
         <input type="submit" class="botao" value="/" onclick="preencher('/')" />
 
         <br><br>
-
+        <!--chama a função limpar() para limpar a tela do visor-->
         <input type="submit" class="botao" value="Limpar / Clear" onclick="limpar();" />
     </body>
 </html>
